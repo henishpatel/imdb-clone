@@ -5,7 +5,7 @@ function Movies() {
     return (
         <>
             <div className="mb-8">
-                <div className="mt-8 mb-8 font-bold text-2xl text-center">
+                <div className="mt-8 mb-8 font-bold text-2xl text-center ">
                     Trending Movies
                 </div>
                 <div className="flex flex-wrap justify-center">
