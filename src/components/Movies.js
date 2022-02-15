@@ -10,28 +10,28 @@ function Movies() {
                 </div>
                 <div className="flex flex-wrap justify-center">
                     <div
-                        className={`bg-[url(${Image})] h-[30vh] w-[150px] bg-center bg-cover flex items-end rounded-xl flex items-end m-4 hover:scale-110 ease-out duration-300`}
+                        className={`bg-[url(${Image})] h-[25vh] w-[150px] md:h-[30vh] md:w-[250px] bg-center bg-cover flex items-end rounded-xl flex items-end m-4 hover:scale-110 ease-out duration-300`}
                     >
                         <div className="w-full text-white text-center py-2 bg-gray-900 rounded-b-xl ">
                             Movie Name
                         </div>
                     </div>
                     <div
-                        className={`bg-[url(${Image})] h-[30vh] w-[150px] bg-center bg-cover flex items-end rounded-xl flex items-end m-4 hover:scale-110 ease-out duration-300`}
+                        className={`bg-[url(${Image})] h-[25vh] w-[150px] md:h-[30vh] md:w-[250px] bg-center bg-cover flex items-end rounded-xl flex items-end m-4 hover:scale-110 ease-out duration-300`}
                     >
                         <div className="w-full text-white text-center py-2 bg-gray-900 rounded-b-xl ">
                             Movie Name
                         </div>
                     </div>
                     <div
-                        className={`bg-[url(${Image})] h-[30vh] w-[150px] bg-center bg-cover flex items-end rounded-xl flex items-end m-4 hover:scale-110 ease-out duration-300`}
+                        className={`bg-[url(${Image})] h-[25vh] w-[150px] md:h-[30vh] md:w-[250px] bg-center bg-cover flex items-end rounded-xl flex items-end m-4 hover:scale-110 ease-out duration-300`}
                     >
                         <div className="w-full text-white text-center py-2 bg-gray-900 rounded-b-xl ">
                             Movie Name
                         </div>
                     </div>
                     <div
-                        className={`bg-[url(${Image})] h-[30vh] w-[150px] bg-center bg-cover flex items-end rounded-xl flex items-end m-4 hover:scale-110 ease-out duration-300`}
+                        className={`bg-[url(${Image})] h-[25vh] w-[150px] md:h-[30vh] md:w-[250px] bg-center bg-cover flex items-end rounded-xl flex items-end m-4 hover:scale-110 ease-out duration-300`}
                     >
                         <div className="w-full text-white text-center py-2 bg-gray-900 rounded-b-xl ">
                             Movie Name
