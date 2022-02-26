@@ -12,12 +12,16 @@ function App() {
         <BrowserRouter>
             <NavBar></NavBar>
             <Routes>
-                <Route path="/" element={<>
-                    <Banner/>
-                    <Movies />
-                    <Pagination/>
-                </>}></Route>
-                <Route path="/favourites" element={<Favourites/>}></Route>
+                <Route
+                    path="/"
+                    element={
+                        <>
+                            <Banner />
+                            <Movies />
+                        </>
+                    }
+                ></Route>
+                <Route path="/favourites" element={<Favourites />}></Route>
             </Routes>
         </BrowserRouter>
     );
