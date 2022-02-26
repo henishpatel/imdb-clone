@@ -33,7 +33,7 @@ function Movies() {
                     setMovies(res.data.results);
 
                     // runs every time when page reload
-                    let oldFav = localStorage.getItem("imdb");
+                    let oldFav = localStorage.getItem("imdb") || [];
                     oldFav = JSON.parse(oldFav);
                     setFavourites([...oldFav]);
                 });
@@ -50,7 +50,7 @@ function Movies() {
     };
 
     // remove function remove movie from fav when user click on ❌
-    let del= (movie) => {
+    let del = (movie) => {
         let newArray = favourites.filter((m) => m.id != movie.id);
         setFavourites([...newArray]);
         localStorage.setItem("imdb", JSON.stringify(newArray));
