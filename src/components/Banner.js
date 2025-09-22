@@ -23,7 +23,7 @@ function Banner() {
                 className={`bg-[url(https://image.tmdb.org/t/p/original/${movie.backdrop_path})] h-[40vh] md:h-[60vh] bg-center bg-cover flex items-end rounded-b-2xl`}
             >
                 {/* movie title */}
-                <div className="text-xl md:text-2xl text-bold text-white p-4 bg-gray-900 w-full flex justify-center bg-opacity-50 font-bold rounded-2xl">
+                <div className="text-xl md:text-2xl text-bold text-white p-4 bg-gray-900 w-full flex justify-center bg-opacity-50 font-bold rounded-2xl dark:bg-gray-900/70">
                     {movie.title}
                 </div>
             </div>

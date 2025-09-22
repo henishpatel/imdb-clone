@@ -110,7 +110,7 @@ function Favourites() {
     };
 
     return (
-        <>
+        <div className="dark:bg-gray-900 dark:text-white min-h-screen">
             {/*  Genere button */}
             <div className="mt-4 px-2 flex justify-center flex-wrap space-x-2">
                 {genres.map((genre) => (
@@ -118,7 +118,7 @@ function Favourites() {
                         className={
                             curGenre == genre
                                 ? "m-2 text-lg p-1 px-2 bg-blue-400 text-white rounded-xl font-bold"
-                                : "m-2 text-lg p-1 px-2 bg-gray-400 hover:bg-blue-400 text-white rounded-xl font-bold"
+                                : "m-2 text-lg p-1 px-2 bg-gray-400 hover:bg-blue-400 text-white rounded-xl font-bold dark:bg-gray-700"
                         }
                         onClick={() => {
                             setCurPage(1);
@@ -136,33 +136,33 @@ function Favourites() {
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
                     placeholder="Search"
-                    className="border border-2 text-center p-1 m-2"
+                    className="border border-2 text-center p-1 m-2 dark:bg-gray-800 dark:border-gray-600"
                 />
                 <input
                     type="number"
                     value={rows}
                     onChange={(e) => setRows(e.target.value)}
                     placeholder="Rows"
-                    className="border border-2 text-center p-1 m-2"
+                    className="border border-2 text-center p-1 m-2 dark:bg-gray-800 dark:border-gray-600"
                 />
             </div>
             {/* TABLE */}
             <div className="flex flex-col m-4">
                 <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                     <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
-                        <div className="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
-                            <table className="min-w-full divide-y divide-gray-200">
-                                <thead className="bg-gray-50 min-w-full">
+                        <div className="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg dark:border-gray-600">
+                            <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-600">
+                                <thead className="bg-gray-50 min-w-full dark:bg-gray-800">
                                     <tr>
                                         <th
                                             scope="col"
-                                            className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                                            className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-gray-300"
                                         >
                                             Name
                                         </th>
                                         <th
                                             scope="col"
-                                            className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                                            className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-gray-300"
                                         >
                                             <div className="flex">
                                                 <img
@@ -186,7 +186,7 @@ function Favourites() {
                                         </th>
                                         <th
                                             scope="col"
-                                            className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                                            className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-gray-300"
                                         >
                                             <div className="flex">
                                                 <img
@@ -210,19 +210,19 @@ function Favourites() {
                                         </th>
                                         <th
                                             scope="col"
-                                            className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                                            className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-gray-300"
                                         >
                                             Genre
                                         </th>
                                         <th
                                             scope="col"
-                                            className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                                            className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-gray-300"
                                         >
                                             Remove
                                         </th>
                                     </tr>
                                 </thead>
-                                <tbody className="bg-white divide-y divide-gray-200">
+                                <tbody className="bg-white divide-y divide-gray-200 dark:bg-gray-900 dark:divide-gray-600">
                                     {filteredMovies.map((movie) => (
                                         <tr key={movie.id}>
                                             <td className="px-6 py-4 whitespace-nowrap">
@@ -235,19 +235,19 @@ function Favourites() {
                                                         />
                                                     </div>
                                                     <div className="ml-4">
-                                                        <div className="text-sm font-medium text-gray-900 font-bold">
+                                                        <div className="text-sm font-medium text-gray-900 font-bold dark:text-white">
                                                             {movie.title}
                                                         </div>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap">
-                                                <div className="text-sm text-gray-900">
+                                                <div className="text-sm text-gray-900 dark:text-white">
                                                     {movie.vote_average}
                                                 </div>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap">
-                                                <div className="text-sm text-gray-900">
+                                                <div className="text-sm text-gray-900 dark:text-white">
                                                     {movie.popularity}
                                                 </div>
                                             </td>
@@ -285,7 +285,7 @@ function Favourites() {
                     goAhead={goAhead}
                 />
             </div>
-        </>
+        </div>
     );
 }
 
