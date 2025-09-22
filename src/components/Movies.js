@@ -58,9 +58,9 @@ function Movies() {
 
     return (
         <>
-            <div className="mb-8">
+            <div className="mb-8 dark:bg-gray-900">
                 {/* trending moives text div */}
-                <div className="mt-8 mb-8 font-bold text-2xl text-center ">
+                <div className="mt-8 mb-8 font-bold text-2xl text-center dark:text-white">
                     Trending Movies
                 </div>
 
